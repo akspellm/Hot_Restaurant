@@ -16,11 +16,11 @@ app.get('/tables', (req, res) => {
     res.send("Tables page")
 });
 
-app.get('/reservation', (req, res)=> {res.send("Reservation page!")
+app.get('/reservation', (req, res)=> {res.send(path.join(__dirname, "reservation.html")
 
 });
 
-app.get('/api/tables', (req, res)=> {res.send("Tables API page!")
+app.get('/api/tables', (req, res)=> {res.send(path.join(__dirname, "tables.html")
 
 });
 
