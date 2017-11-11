@@ -1,6 +1,31 @@
+//Set up server
 const express = require('express');
 const app = express();
+const PORT = 3000;
 
-app.get('/', (req, res) => res.send('Hello World!'))
 
-app.listen(3000, () => console.log('Listening on port 3000!'));
+//Listen for requests
+app.listen(PORT, () => console.log('Listening on port 3000!'));
+
+//------------------- Establish routes [START ]-------------------
+app.get('/', (req, res) => {res.send('Hello World!')
+
+});
+
+app.get('/tables', (req, res) => {
+    res.send("Tables page")
+});
+
+app.get('/reservation', (req, res)=> {res.send("Reservation page!")
+
+});
+
+app.get('/api/tables', (req, res)=> {res.send("Tables API page!")
+
+});
+
+app.get('/api/waitlist', (req, res)=> {res.send("Wait List API page!")
+
+});
+
+//------------------- Establish routes [STOP ]-------------------
