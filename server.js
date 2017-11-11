@@ -13,7 +13,7 @@ app.get('/', (req, res) => {res.sendFile(path.join(__dirname, "index.html"));
 });
 
 app.get('/tables', ( req, res) => {
-    res.sendFile("Tables page")
+    res.sendFile(path.join(__dirname, "tables.html"));
 });
 
 app.get('/reservation', (req, res)=> {
