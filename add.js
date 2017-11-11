@@ -10,6 +10,6 @@
       $.post("/api/", newReservation)
       .done(function(data) {
         console.log(data);
-        alert("Adding character...");
+      );
       });
     });
