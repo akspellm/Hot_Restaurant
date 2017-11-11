@@ -29,3 +29,4 @@ app.get('/api/waitlist', (req, res)=> {res.send("Wait List API page!")
 });
 
 //------------------- Establish routes [STOP ]-------------------
+
